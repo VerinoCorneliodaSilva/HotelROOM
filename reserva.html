@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="CSS/estilo.css">
+<section id="reservas" class="reservas-section">
+        <div class="container">
+            <h2>Faça sua Reserva</h2>
+            <div class="form-container">
+                <form id="reservaForm" action="PHP/salvar_reservas.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quarto">Tipo de Quarto</label>
+                        <select id="quarto" name="quarto" aria-placeholder="Selecione um quarto" required>
+                            <option value=""></option>
+                            <option value="Quarto 101">Quarto 101: Quarto de luxo para casal</option>
+                            <option value="Quarto 102">Quarto 102: Quarto de luxo para solteiro(a)</option>
+                            <option value="Quarto 103">Quarto 103: Quarto simples executivo</option>
+                            <option value="Quarto 104">Quarto 104: Quarto com vista para a praia (solteiro)</option>
+                            <option value="Quarto 105">Quarto 105: Quarto com vista para a praia   (casal)</option>
+                            <option value="Quarto 106">Quarto 106: Quarto premium vista piscina</option>
+                            <option value="Quarto 107">Quarto 107: Quarto casal no centro do prédio (standard)</option>
+                            <option value="Quarto 108">Quarto 108: Quarto casal conforto central</option>
+                            <option value="Quarto 109">Quarto 109: Quarto casal premium central</option>
+                            <option value="Quarto 110">Quarto 110: Suíte de luxo (standard)</option>
+                            <option value="Quarto 111">Quarto 111: Suíte de luxo (premium)</option>
+                            <option value="Quarto 112">Quarto 112: Suíte de luxo (master)</option>
+                            <option value="Quarto 113">Quarto 113: Suíte presidencial (standard)</option>
+                            <option value="Quarto 114">Quarto 114: Suíte presidencial (premium)</option>
+                            <option value="Quarto 115">Quarto 115: Suíte presidencial (master)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="entrada">Data de Entrada</label>
+                            <input type="date" id="entrada" name="entrada" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="saida">Data de Saída</label>
+                            <input type="date" id="saida" name="saida" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-calendar-check"></i>
+                        Confirmar Reserva
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
